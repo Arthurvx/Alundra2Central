@@ -1,62 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Alundra 2 RAM MAP</title>
-  <style>
-    h1 {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-    h3 {
-        font-family: Arial;
-        font-size: 14px;
-        font-weight: lighter;
-    }
-    footer {
-        margin-top: auto;
-        text-align: center;
-        background-color: white;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        margin: 20px;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-auto-rows: 100px;
-        grid-gap: 2px;
-    }
-    .item {
-        background-color: #EDEEF7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: Arial;
-        font-weight: lighter;
-        font-size: 15px;
-    }
-    .itemHeader {
-        background-color: #453C67;
-        color: aliceblue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: Arial;
-        font-weight: lighter;
-        font-size: 15px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alundra 2 Ex</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #666;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        .content {
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-  <button onclick="window.location.href = 'downloads.html';">Downloads</button>
-  <button onclick="window.location.href = 'rammap.html';">Go to RAM MAP</button>
-  <button onclick="window.location.href = 'roomlist.html';">Go to ROOM List</button>
+
+    <header>
+        <h1>Alundra 2 Ex</h1>
+    </header>
+
+    <nav>
+        <a href="roomlist.html">Room list</a>
+        <a href="rammap.html">Ram Map</a>
+        <a href="downloads.html">Downloads</a>
+    </nav>
+
+    <div class="content">
+        <p>Welcome To Alundra 2 Ex!</p>
+    </div>
+
 </body>
-<footer>
-<p>Values since 2021. Page updated on 17/12/2023.</p>
-</footer>
 </html>
