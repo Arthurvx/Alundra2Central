@@ -4,17 +4,25 @@
   <title>Alundra 2 RAM MAP</title>
   <style>
     .container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-auto-rows: 50px;
-      grid-gap: 2px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 50px;
+        grid-gap: 2px;
     }
     .item {
-      background-color: #ddd;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .itemHeader {
+        background-color: #000000;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;        
     }
   </style>
 </head>
@@ -25,10 +33,10 @@
     <h3>This RAM MAP is useful if you want to hack, change or test in-game functions through ram memory addresses.</h3>
     <br>
     <div class="container">
-        <div class="item">Address</div>
-        <div class="item">Notes</div>
-        <div class="item">Default Value</div>
-        <div class="item">Value Range</div>
+        <div class="itemHeader">Address</div>
+        <div class="itemHeader">Notes</div>
+        <div class="itemHeader">Default Value</div>
+        <div class="itemHeader">Value Range</div>
         <div class="item">0xFDE5A</div>
         <div class="item">Life's Value</div>
         <div class="item">100 | 0x64</div>
