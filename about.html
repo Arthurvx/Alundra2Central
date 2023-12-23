@@ -24,20 +24,23 @@
             padding: 10px;
         }
         nav {
-            background-color: rgba(0,0,0,0.8);
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+          background-image: linear-gradient(#190a0550 10%, #190a0590 70%, #87000040);
+          overflow: hidden;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          height: 70px;
+          }
+       nav a {
+         color: #fff;
+         text-align: left;
+         text-decoration: none;
+         padding: 14px 16px;
+         flex: 0.1;
+      }
         nav a:hover {
             background-color: rgba(0,0,0,0);
-            color: rgba(0,255,0,0.5);
+            text-shadow: #ffffff 0 0 25px;
         }
         .content {
         	margin: 20px;
@@ -75,11 +78,8 @@
     </style>
 </head>
 <body>
-    
-    <header>
-        <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="15%">
-    </header>
     <nav>
+        <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="15%">
     	<a href="index.html">Home</a>
         <a href="roomlist.html">Room list</a>
         <a href="rammap.html">Ram Map</a>
