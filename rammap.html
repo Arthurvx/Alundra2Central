@@ -1,236 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alundra 2 | RAMMAP</title>
     <style>
-    
-        p {
-            color:white;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #212121;
-            background-image: url("https://raw.githubusercontent.com/Arthurvx						/Alundra2Explained/main/assets/KABEKAB1.jpg");
-        }
-        header {
-            background-image: url("https://raw.githubusercontent.com/Arthurvx						/Alundra2Explained/main/assets/KABEKAB1.jpg");
-            background-color: #333;
-            color: #fff;
-            text-align: left;
-            padding: 10px;
-        }
-        nav {
-            background-color: rgba(0,0,0,0.8);
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: #fff;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: rgba(0,0,0,0);
-            color: rgba(0,255,0,0.5);
-        }
-        .content {
-        	margin: 20px;
-            padding: 10px;
-            background-color: rgba(10,0,0,0.9);
-            border-radius: 5px 5px 5px 5px;
-            border: 1px solid #555;
-        }
-        .content2 {
-        	margin: 20px;
-            padding: 5px;
-            background-color: rgba(10,0,0,0.9);
-            border-radius: 5px 5px 5px 5px;
-            border: 1px solid #555;
-            text-align: center;
-            font-size: 24pt;
-        }
-        table {
-          width: calc(100% - 40px);
-          border-collapse: collapse;
-          margin-left: 20px;
-          margin-right: 20px;
-        }
-        th, td {
-          font-family: sans-serif;
-          border: 1px solid #abb1b8;
-          text-align: left;
-          padding: 8px;
-          background-color:#f8f9fa;
-        }
-        th {
-          background-color: #eaecf0;
-    	}
-        
+      p {
+        color: white;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #212121;
+        background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
+      }
+
+      header {
+        background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
+        background-color: #333;
+        color: #fff;
+        text-align: left;
+        padding: 10px;
+      }
+
+      nav {
+        background-image: linear-gradient(#190a0550 10%, #190a0590 70%, #87000040);
+        overflow: hidden;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 70px;
+      }
+
+      nav a {
+        color: #fff;
+        text-align: left;
+        text-decoration: none;
+        padding: 14px 16px;
+        flex: 0.1;
+      }
+
+      nav a:hover {
+        background-color: rgba(0, 0, 0, 0);
+        text-shadow: #ffffff 0 0 25px;
+      }
+
+      .content {
+        margin: 20px;
+        padding: 10px;
+        background-color: rgba(10, 0, 0, 0.9);
+        border-radius: 5px 5px 5px 5px;
+        border: 1px solid #555;
+      }
+
+      .content2 {
+        margin: 20px;
+        padding: 5px;
+        background-color: rgba(10, 0, 0, 0.9);
+        border-radius: 5px 5px 5px 5px;
+        border: 1px solid #555;
+        text-align: center;
+        font-size: 24pt;
+      }
+
+      table {
+        width: calc(100% - 40px);
+        border-collapse: collapse;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+
+      th,
+      td {
+        font-family: sans-serif;
+        border: 1px solid #abb1b8;
+        text-align: left;
+        padding: 8px;
+        background-color: #f8f9fa;
+      }
+
+      th {
+        background-color: #eaecf0;
+      }
     </style>
-</head>
-<body>
-    
-    <header>
-        <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central				/main/weblogo.png" alt="logo" width="15%">
-    </header>
+  </head>
+  <body>
     <nav>
-    	<a href="index.html">Home</a>
-        <a href="roomlist.html">Room list</a>
-        <a href="rammap.html">Ram Map</a>
-        <a href="downloads.html">Downloads</a>
-        <a href="about.html">About</a>
+      <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central				/main/weblogo.png" alt="logo" width="10%">
+      <a href="index.html">Home</a>
+      <a href="roomlist.html">Room list</a>
+      <a href="rammap.html">Ram Map</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="about.html">About</a>
     </nav>
     <div class="content">
-        <p>This RAM MAP is useful if you want to hack, change, test in-game functions 			or even create Lua Scripts.</p>
-        <p>Version used is NTSC-U [SLUS-01017], therefore those address may be 					different from another regions, such as NTSC-J or PAL.</p>
+      <p>This RAM MAP is useful if you want to hack, change, test in-game functions or even create Lua Scripts.</p>
+      <p>Version used is NTSC-U [SLUS-01017], therefore those address may be different from another regions, such as NTSC-J or PAL.</p>
     </div>
     <div class="content">
-    	<p>*We registered and indexed a total of 12 addresses.</p>
+      <p>*We registered and indexed a total of 12 addresses.</p>
     </div>
-   	    <div class="content2">
-    	<p>Player Related Adresses:</p>
-    </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Address</th>
-            <th>Title</th>
-            <th>Notes</th>
-            <th>Default Value</th>
-            <th>Normal Value Range</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0x067712</td>
-            <td>Flint's Life</td>
-            <td>(Values above the limiter cause the game to crash. see Flint's Life 			limiter).</td>
-            <td>200</td>
-            <td>0 - 900</td>
-          </tr>
-          <tr>
-          	<td>0x067710</td>
-            <td>Flint's Life limiter</td>
-            <td>Change this value to increase or decrease the limiter</td>
-            <td>200</td>
-			<td>0 - 900</td>
-          </tr>
-          <tr>
-          	<td>0x11D631 or 0x11D641</td>
-            <td>Flint's Speed</td>
-            <td>
-0 - idle, 8 - walk, 9 - walking jumping, 14 - running, 17 - running jumping</td>
-            <td>0</td>
-			<td>
-0 - 255 (Values above 40 make it impossible to play)</td>
-          </tr>
-          <tr>
-          	<td>0x067704</td>
-            <td>Flint's Gold</td>
-            <td>
-Change Flint's gold, 0x12F59C is in control of animation.</td>
-            <td>100</td>
-			<td>0 - 999999 (Values above 999999 may also work, but doesn't display correctly.)</td>
-          </tr>
-          <tr>
-          	<td>0x06744F</td>
-            <td>Flint's Key Amount</td>
-            <td>Yep, just that.</td>
-            <td>0</td>
-			<td>0 - 9</td>
-          </tr>
-          <tr>
-          	<td>0x067425</td>
-            <td>Enable EP</td>
-            <td>Enables Flint's EP bar</td>
-            <td>0</td>
-			<td>0 or 1 (enable or disabled)</td>
-          </tr>
-          <tr>
-          	<td>0x067716</td>
-            <td>Flint's EP</td>
-            <td>Values above the EP limiter cause the game to crash. see Flint's EP limiter.</td>
-            <td>200</td>
-			<td>0 - 999</td>
-          </tr>
-          <tr>
-          	<td>0x067714</td>
-            <td>Flint's EP limiter</td>
-            <td>Change this value to increase or decrease the limiter.</td>
-            <td>200</td>
-			<td>
-0 - 999</td>
-          </tr>
-          <tr>
-          	<td>0x06746C</td>
-            <td>Flint's Weapon</td>
-            <td>31 - Long Sword, 32 - Bronze Sword, 33 - Broad Sword, 34 - Rune Sword, 35 - Shining Sword, 36 - Rising Sword</td>
-            <td>31</td>
-			<td>
-[31, 32, 33, 34, 35, 36] (Anything else is another item and may crash the game).</td>
-          </tr>
-          <tr>
-          	<td>0x06746E</td>
-            <td>Flint's Shield</td>
-            <td>
-39 - Buckler Shield, 40 - Small Shield, 41 - Titan Shield, 42 - Mithril Shield, 43 - Adamant Shield, 44 - Valar Shield</td>
-            <td>39</td>
-			<td>[39, 40, 41, 42, 43, 44] (Anything else is another item and may crash the game).</td>
-          </tr>
-          <tr>
-          	<td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-			<td>100000</td>
-          </tr>
-        </tbody>
-  </table>
-  
     <div class="content2">
-    	<p>Game's general Adresses:</p>
+      <p>Player Related Adresses:</p>
     </div>
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Address</th>
-        <th>Title</th>
-        <th>Notes</th>
-        <th>Default Value</th>
-        <th>Normal Value Range</th>
-      </tr>
-    </thead>
-    <tbody>
-          <tr>
-          	<td>0x12B74C</td>
-            <td>Current Room</td>
-            <td>Changing this value, you're able to access every room on the game. 				After the value is set, you must change the teleport activator to 1.</td>
-            <td>Current room Value</td>
-			<td>The exact number of rooms in the game is unknown</td>
-          </tr>
-          <tr>
-          	<td>0x12B752</td>
-            <td>Room teleport Activator</td>
-            <td>Activates teleportation to the designated room in Current Room.</td>
-            <td>0</td>
-			<td>0 or 1 (enabled or disabled)</td>
-          </tr>
-          <tr>
-          	<td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-			<td>100000</td>
-          </tr>
-    </tbody>
-  </table>
-  
-</body>
+    <table>
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>Title</th>
+          <th>Notes</th>
+          <th>Default Value</th>
+          <th>Normal Value Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0x067712</td>
+          <td>Flint's Life</td>
+          <td>(Values above the limiter cause the game to crash. see Flint's Life limiter).</td>
+          <td>200</td>
+          <td>0 - 900</td>
+        </tr>
+        <tr>
+          <td>0x067710</td>
+          <td>Flint's Life limiter</td>
+          <td>Change this value to increase or decrease the limiter</td>
+          <td>200</td>
+          <td>0 - 900</td>
+        </tr>
+        <tr>
+          <td>0x11D631 or 0x11D641</td>
+          <td>Flint's Speed</td>
+          <td> 0 - idle, 8 - walk, 9 - walking jumping, 14 - running, 17 - running jumping</td>
+          <td>0</td>
+          <td> 0 - 255 (Values above 40 make it impossible to play)</td>
+        </tr>
+        <tr>
+          <td>0x067704</td>
+          <td>Flint's Gold</td>
+          <td> Change Flint's gold, 0x12F59C is in control of animation.</td>
+          <td>100</td>
+          <td>0 - 999999 (Values above 999999 may also work, but doesn't display correctly.)</td>
+        </tr>
+        <tr>
+          <td>0x06744F</td>
+          <td>Flint's Key Amount</td>
+          <td>Yep, just that.</td>
+          <td>0</td>
+          <td>0 - 9</td>
+        </tr>
+        <tr>
+          <td>0x067425</td>
+          <td>Enable EP</td>
+          <td>Enables Flint's EP bar</td>
+          <td>0</td>
+          <td>0 or 1 (enable or disabled)</td>
+        </tr>
+        <tr>
+          <td>0x067716</td>
+          <td>Flint's EP</td>
+          <td>Values above the EP limiter cause the game to crash. see Flint's EP limiter.</td>
+          <td>200</td>
+          <td>0 - 999</td>
+        </tr>
+        <tr>
+          <td>0x067714</td>
+          <td>Flint's EP limiter</td>
+          <td>Change this value to increase or decrease the limiter.</td>
+          <td>200</td>
+          <td> 0 - 999</td>
+        </tr>
+        <tr>
+          <td>0x06746C</td>
+          <td>Flint's Weapon</td>
+          <td>31 - Long Sword, 32 - Bronze Sword, 33 - Broad Sword, 34 - Rune Sword, 35 - Shining Sword, 36 - Rising Sword</td>
+          <td>31</td>
+          <td> [31, 32, 33, 34, 35, 36] (Anything else is another item and may crash the game).</td>
+        </tr>
+        <tr>
+          <td>0x06746E</td>
+          <td>Flint's Shield</td>
+          <td> 39 - Buckler Shield, 40 - Small Shield, 41 - Titan Shield, 42 - Mithril Shield, 43 - Adamant Shield, 44 - Valar Shield</td>
+          <td>39</td>
+          <td>[39, 40, 41, 42, 43, 44] (Anything else is another item and may crash the game).</td>
+        </tr>
+        <tr>
+          <td>100000</td>
+          <td>100000</td>
+          <td>100000</td>
+          <td>100000</td>
+          <td>100000</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="content2">
+      <p>Game's general Adresses:</p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Address</th>
+          <th>Title</th>
+          <th>Notes</th>
+          <th>Default Value</th>
+          <th>Normal Value Range</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0x12B74C</td>
+          <td>Current Room</td>
+          <td>Changing this value, you're able to access every room on the game. After the value is set, you must change the teleport activator to 1.</td>
+          <td>Current room Value</td>
+          <td>The exact number of rooms in the game is unknown</td>
+        </tr>
+        <tr>
+          <td>0x12B752</td>
+          <td>Room teleport Activator</td>
+          <td>Activates teleportation to the designated room in Current Room.</td>
+          <td>0</td>
+          <td>0 or 1 (enabled or disabled)</td>
+        </tr>
+        <tr>
+          <td>100000</td>
+          <td>100000</td>
+          <td>100000</td>
+          <td>100000</td>
+          <td>100000</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
