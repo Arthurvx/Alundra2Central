@@ -8,46 +8,34 @@
       p {
         color: white;
       }
-
       body {
+      	margin: 0;
         font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
         background-color: #212121;
         background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
       }
-
-      header {
-        background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
-        background-color: #333;
-        color: #fff;
-        text-align: left;
-        padding: 10px;
-      }
-
       nav {
         background-image: linear-gradient(#190a0550 10%, #190a0590 70%, #87000040);
-        overflow: hidden;
         position: fixed;
+        top: 0;
+        width: 100%;
+        height: 80px;
         display: flex;
         justify-content: left;
         align-items: center;
-        height: 70px;
       }
-
       nav a {
-        color: #fff;
-        text-align: left;
-        text-decoration: none;
+        display: flex;
+        color: #f2f2f2;
+        text-align: center;
         padding: 14px 16px;
-        flex: 0.1;
+        text-decoration: none;
+        font-size: 17px;
       }
-
       nav a:hover {
         background-color: rgba(0, 0, 0, 0);
         text-shadow: #ffffff 0 0 25px;
       }
-
       .content {
         margin: 20px;
         padding: 10px;
@@ -55,92 +43,68 @@
         border-radius: 5px 5px 5px 5px;
         border: 1px solid #555;
       }
-
-      .content2 {
-        margin: 20px;
-        padding: 5px;
-        background-color: rgba(10, 0, 0, 0.9);
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #555;
-        text-align: center;
-        font-size: 24pt;
-      }
-
-      table {
-        width: calc(100% - 40px);
-        border-collapse: collapse;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-
-      th,
-      td {
-        font-family: sans-serif;
-        border: 1px solid #abb1b8;
-        text-align: left;
-        padding: 8px;
-        background-color: #f8f9fa;
-      }
-
-      th {
-        background-color: #eaecf0;
+     .main {
+        padding: 16px;
+        margin-top: 80px;
       }
     </style>
   </head>
   <body>
     <nav>
-      <a href="index.html"><img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="100%"></a>
+      <a href="index.html"><img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px"></a>
       <a href="roomlist.html">Room list</a>
       <a href="rammap.html">Ram Map</a>
       <a href="downloads.html">Downloads</a>
       <a href="about.html">About</a>
     </nav>
-    <div class="content">
-      <p>Alundra 2: A New Legend Begins, is an action role-playing game developed by Matrix Software for PlayStation 1. The game was first released on November 18, 1999 in Japan. later in 2000, the game was release in USA and Canada (March) and EU (June).</p>
-    </div>
-    <div class="content">
-      <p>At the moment, the game is available in 5 languages, with 4 official translations and 1 unofficial translations.</p>
-    </div>
-    <div class="content">
-      <p>Official Versions.</p>
-      <p>
-        <img src="https://wowroms.com/assets/images/japan.jpg"> - アランドラ2 魔進化の謎
-      </p>
-      <p>
-        <img src="https://wowroms.com/assets/images/usa.jpg">
-        <img src="https://wowroms.com/assets/images/australia.jpg">
-        <img src="https://wowroms.com/assets/images/united-Kingdom.jpg"> - Alundra 2: A New Legend Begins
-      </p>
-      <p>
-        <img src="https://wowroms.com/assets/images/france.jpg"> - Alundra 2: Une Légende est née
-      </p>
-      <p>
-        <img src="https://wowroms.com/assets/images/germany.jpg"> - Alundra 2: Der Beginn einer neuen Legende
-      </p>
-    </div>
-    <div class="content">
-      <p>Unofficial Versions.</p>
-      <p>
-        <img src="https://wowroms.com/assets/images/russia.jpg"> - Алундра 2: Рождение легенды (100% Russian translation by Golden Leon <a href="http://pscd.ru/games_rus/psx_rus/a_psx_rus/9212-alundra-2-a-new-legend-begins-golden-leon.html">translation source</a>)
-      </p>
-      <p>
-        <img src="https://wowroms.com/assets/images/brazil.jpg"> - Alundra 2: Uma Nova Lenda Começa (???% Portuguese translation by Bit.Raiden <a href="https://www.romhacking.net.br/index.php?topic=1894.0">translation source</a>)
-      </p>
-      <p>
-        <img src="https://wowroms.com/assets/images/china.jpg"> - 阿兰多拉2魔化之迷 (???% Chinese translation by 黄金风格neo <a href="https://www.bilibili.com/video/BV1j3411J7nA/">translation source</a>)
-      </p>
-    </div>
-    <div class="content">
-      <p>Never Translated / Translation Request</p>
-      <p>
-        <img src="https://wowroms.com/assets/images/korea.jpg"> - 아란드라2 마진화의수수께끼 (Never Translated)
-      </p>
-      <p>
-        <img src="https://wowroms.com/assets/images/spain.jpg"> - Alundra 2: Comienza una nueva leyenda (Never Translated / Translation Request)
-      </p>
-      <p>
-        <img src="https://wowroms.com/assets/images/italy.jpg"> - Alundra 2: Inizia Una Nuova Leggenda (Never Translated / Translation Request)
-      </p>
-    </div>
+    <div class="main">
+      <div class="content">
+        <p>Alundra 2: A New Legend Begins, is an action role-playing game developed by Matrix Software for PlayStation 1. The game was first released on November 18, 1999 in Japan. later in 2000, the game was release in USA and Canada (March) and EU (June).</p>
+      </div>
+      <div class="content">
+        <p>At the moment, the game is available in 5 languages, with 4 official translations and 1 unofficial translations.</p>
+      </div>
+      <div class="content">
+        <p>Official Versions.</p>
+        <p>
+          <img src="https://wowroms.com/assets/images/japan.jpg"> - アランドラ2 魔進化の謎
+        </p>
+        <p>
+          <img src="https://wowroms.com/assets/images/usa.jpg">
+          <img src="https://wowroms.com/assets/images/australia.jpg">
+          <img src="https://wowroms.com/assets/images/united-Kingdom.jpg"> - Alundra 2: A New Legend Begins
+        </p>
+        <p>
+          <img src="https://wowroms.com/assets/images/france.jpg"> - Alundra 2: Une Légende est née
+        </p>
+        <p>
+          <img src="https://wowroms.com/assets/images/germany.jpg"> - Alundra 2: Der Beginn einer neuen Legende
+        </p>
+      </div>
+      <div class="content">
+        <p>Unofficial Versions.</p>
+        <p>
+          <img src="https://wowroms.com/assets/images/russia.jpg"> - Алундра 2: Рождение легенды (100% Russian translation by Golden Leon <a href="http://pscd.ru/games_rus/psx_rus/a_psx_rus/9212-alundra-2-a-new-legend-begins-golden-leon.html">translation source</a>)
+        </p>
+        <p>
+          <img src="https://wowroms.com/assets/images/brazil.jpg"> - Alundra 2: Uma Nova Lenda Começa (???% Portuguese translation by Bit.Raiden <a href="https://www.romhacking.net.br/index.php?topic=1894.0">translation source</a>)
+        </p>
+        <p>
+          <img src="https://wowroms.com/assets/images/china.jpg"> - 阿兰多拉2魔化之迷 (???% Chinese translation by 黄金风格neo <a href="https://www.bilibili.com/video/BV1j3411J7nA/">translation source</a>)
+        </p>
+      </div>
+      <div class="content">
+        <p>Never Translated / Translation Request</p>
+        <p>
+          <img src="https://wowroms.com/assets/images/korea.jpg"> - 아란드라2 마진화의수수께끼 (Never Translated)
+        </p>
+        <p>
+          <img src="https://wowroms.com/assets/images/spain.jpg"> - Alundra 2: Comienza una nueva leyenda (Never Translated / Translation Request)
+        </p>
+        <p>
+          <img src="https://wowroms.com/assets/images/italy.jpg"> - Alundra 2: Inizia Una Nuova Leggenda (Never Translated / Translation Request)
+        </p>
+      </div>
+  	</div>    
   </body>
 </html>
