@@ -31,7 +31,8 @@
         justify-content: left;
         align-items: center;
       }
-      nav a {
+
+      .navitems, .dropdown {
         display: flex;
         color: #f2f2f2;
         text-align: center;
@@ -39,26 +40,22 @@
         text-decoration: none;
         font-size: 17px;
       }
-      nav a:hover {
-        background-color: rgba(0, 0, 0, 0);
-        text-shadow: #ffffff 0 0 25px;
-      }
       .content {
         margin: 20px;
-        padding: 10px;
-        background-color: rgba(10, 0, 0, 0.9);
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #555;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border.png) 32 round;
+        background-color: #000000c8;
+        padding: 5px;
+        background-clip: padding-box;
       }
 
       .content2 {
         margin: 20px;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border.png) 32 round;
+        background-color: #000000c8;
         padding: 5px;
-        background-color: rgba(10, 0, 0, 0.9);
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #555;
-        text-align: center;
-        font-size: 24pt;
+        background-clip: padding-box;
       }
 
       table {
@@ -81,15 +78,80 @@
         padding: 16px;
         margin-top: 80px;
       }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 75%;
+        z-index: 1;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
+      }
+
+      .dropdown-content a {
+        display: flex;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .dropdown-content a:hover {
+        color: yellow;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: white;
+        background-color: #000000c8;
+      }
+      .dropdown:hover, .navitems:hover {
+        text-shadow: #ffffff 0 0 25px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <nav>
-      <a href="index.html"><img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px"></a>
-      <a href="roomlist.html">Room list</a>
-      <a href="rammap.html">Ram Map</a>
-      <a href="downloads.html">Downloads</a>
-      <a href="about.html">About</a>
+
+        <a class="navitems" href="index.html">
+            <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px">
+        </a>
+
+        <div class="dropdown" href="#">Gameplay
+            <div class="dropdown-content">
+                <a href="#">Walkthrough</a>
+                <a href="#">Saves</a>
+            </div>
+        </div>
+
+        <div class="dropdown" href="#">Game Map
+            <div class="dropdown-content">
+                <a href="#">Alundra 2 Overworld</a>
+                <a href="roomlist.html">Room Listing</a>
+            </div>
+        </div>
+
+        <a class="navitems" href="downloads.html">Downloads</a>
+
+        <div class="dropdown" href="#">Hacking
+            <div class="dropdown-content">
+                <a href="rammap.html">RAM Map</a>
+                <a href="#">ROM Map</a>
+            </div>
+        </div>
+
+        <div class="dropdown" href="#">Speedrun
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (This page is already being build)</a>
+            </div>
+        </div>
+
+        <a class="navitems" href="about.html">About</a>
+
     </nav>
     <div class="main">
       <div class="content">
