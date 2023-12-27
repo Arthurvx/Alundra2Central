@@ -9,12 +9,13 @@
       p {
         color: white;
       }
+
       body {
-      	margin: 0;
+        margin: 0;
         font-family: 'Arial', sans-serif;
-        background-color: #212121;
         background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
       }
+
       nav {
         background-image: linear-gradient(#190a05c0 10%, #190a05A0 70%, #87000050);
         position: fixed;
@@ -25,7 +26,8 @@
         justify-content: left;
         align-items: center;
       }
-      nav a {
+
+      .navitems, .dropdown {
         display: flex;
         color: #f2f2f2;
         text-align: center;
@@ -33,57 +35,130 @@
         text-decoration: none;
         font-size: 17px;
       }
-      nav a:hover {
-        background-color: rgba(0, 0, 0, 0);
-        text-shadow: #ffffff 0 0 25px;
-      }
+
       .content {
         margin: 20px;
-        padding: 10px;
-        background-color: rgba(10, 0, 0, 0.9);
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #555;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border.png) 32 round;
+        background-color: #000000c8;
+        padding: 5px;
+        background-clip: padding-box;
       }
+
       .author {
         margin: 0;
-        padding: 10px;
-        background-color: rgba(10, 0, 0, 0.9);
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #555;
-        font-size:9px;
+        font-size: 9px;
+        border: 7px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
       }
-     .main {
+
+      .main {
         margin-top: 90px;
       }
-     .main-lastest {
+
+      .main-lastest {
         margin-top: 40px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 75%;
+        z-index: 1;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
+      }
+
+      .dropdown-content a {
+        display: flex;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .dropdown-content a:hover {
+        color: yellow;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: white;
+        background-color: #000000c8;
+      }
+      .dropdown:hover, .navitems:hover {
+        text-shadow: #ffffff 0 0 25px;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
+  
     <nav>
-      <a href="index.html"><img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px"></a>
-      <a href="roomlist.html">Room list</a>
-      <a href="rammap.html">Ram Map</a>
-      <a href="downloads.html">Downloads</a>
-      <a href="about.html">About</a>
+
+        <a class="navitems" href="index.html">
+            <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px">
+        </a>
+
+        <div class="dropdown" href="#">Gameplay
+            <div class="dropdown-content">
+                <a href="#">Walkthrough</a>
+                <a href="#">Saves</a>
+            </div>
+        </div>
+
+        <div class="dropdown" href="#">Game Map
+            <div class="dropdown-content">
+                <a href="#">Alundra 2 Overworld</a>
+                <a href="roomlist.html">Room Listing</a>
+            </div>
+        </div>
+
+        <a class="navitems" href="downloads.html">Downloads</a>
+
+        <div class="dropdown" href="#">Hacking
+            <div class="dropdown-content">
+                <a href="rammap.html">RAM Map</a>
+                <a href="#">ROM Map</a>
+            </div>
+        </div>
+
+        <div class="dropdown" href="#">Speedrun
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (This page is already being build)</a>
+            </div>
+        </div>
+
+        <a class="navitems" href="about.html">About</a>
+
     </nav>
+    
     <div class="main">
       <div class="content">
-        <p class="author">Posted by <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Pirann</span> on 25/12/2023.</p>
-        <p><span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Merry Christmas! </span>The Alundra 2 Central wishes everyone a merry Christmas! With a lot of joy and peace =) </p>
-        <img src="https://cdn.discordapp.com/attachments/955176749866569809/1188924433860149319/xmas.png?ex=659c4b2a&is=6589d62a&hm=e641cbdf5028ed92e54fa864a95fa2e30aa0cdadf45e32540ccd3346eadec30f&" width="25%"/>
+        <p class="author">Posted by <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Pirann</span> on 25/12/2023. </p>
+        <p>
+          <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Merry Christmas! </span>The Alundra 2 Central wishes everyone a merry Christmas! With a lot of joy and peace =)
+        </p>
+        <img src="https://cdn.discordapp.com/attachments/955176749866569809/1188924433860149319/xmas.png?ex=659c4b2a&is=6589d62a&hm=e641cbdf5028ed92e54fa864a95fa2e30aa0cdadf45e32540ccd3346eadec30f&" width="25%" />
       </div>
-    <div class="main-lastest">
-      <div class="content">
-        <p class="author">Posted by <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Pirann</span> on 22/12/2023.</p>
-        <p><span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">WARNING! </span>Our website may not be displaying correctly on mobile devices yet. Therefore, viewing it on a computer is recommended.</p>
-      </div>
-    <div class="main-lastest">
-      <div class="content">
-        <p class="author">Posted by <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Pirann</span> on 20/12/2023.</p>
-        <p>Welcome to Alundra 2 Central! your primary news and resource site for the game Alundra 2!</p>
-        <img src="https://pics.filmaffinity.com/alundra_2-673107178-large.jpg" width="50%">
-      </div>
+      <div class="main-lastest">
+        <div class="content">
+          <p class="author">Posted by <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Pirann</span> on 22/12/2023 </p>
+          <p>
+            <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">WARNING! </span>Our website may not be displaying correctly on mobile devices yet. Therefore, viewing it on a computer is recommended.
+          </p>
+        </div>
+        <div class="main-lastest">
+          <div class="content">
+            <p class="author">Posted by <span style="font-family: Arial, sans-serif; color: red; font-weight: bold;">Pirann</span> on 20/12/2023. </p>
+            <p>Welcome to Alundra 2 Central! your primary news and resource site for the game Alundra 2!</p>
+            <img src="https://pics.filmaffinity.com/alundra_2-673107178-large.jpg" width="50%">
+          </div>
   </body>
 </html>
