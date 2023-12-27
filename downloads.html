@@ -3,17 +3,19 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your primary news and resource site for the game Alundra 2!">
     <title>Alundra 2 | Downloads </title>
     <style>
       p {
         color: white;
       }
+
       body {
-      	margin: 0;
+        margin: 0;
         font-family: 'Arial', sans-serif;
-        background-color: #212121;
         background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
       }
+
       nav {
         background-image: linear-gradient(#190a05c0 10%, #190a05A0 70%, #87000050);
         position: fixed;
@@ -24,7 +26,8 @@
         justify-content: left;
         align-items: center;
       }
-      nav a {
+
+      .navitems, .dropdown {
         display: flex;
         color: #f2f2f2;
         text-align: center;
@@ -32,32 +35,108 @@
         text-decoration: none;
         font-size: 17px;
       }
-      nav a:hover {
-        background-color: rgba(0, 0, 0, 0);
-        text-shadow: #ffffff 0 0 25px;
-      }
+
       .content {
         margin: 20px;
-        padding: 10px;
-        background-color: rgba(10, 0, 0, 0.9);
-        border-radius: 5px 5px 5px 5px;
-        border: 1px solid #555;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border.png) 32 round;
+        background-color: #000000c8;
+        padding: 5px;
+        background-clip: padding-box;
       }
-     .main {
+
+      .author {
+        margin: 0;
+        font-size: 9px;
+        border: 7px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
+      }
+
+      .main {
         margin-top: 90px;
       }
-     .main-lastest {
+
+      .main-lastest {
         margin-top: 40px;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 75%;
+        z-index: 1;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
+      }
+
+      .dropdown-content a {
+        display: flex;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .dropdown-content a:hover {
+        color: yellow;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown-content a {
+        color: white;
+        background-color: #000000c8;
+      }
+      .dropdown:hover, .navitems:hover {
+        text-shadow: #ffffff 0 0 25px;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
+  
     <nav>
-      <a href="index.html"><img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px"></a>
-      <a href="roomlist.html">Room list</a>
-      <a href="rammap.html">Ram Map</a>
-      <a href="downloads.html">Downloads</a>
-      <a href="about.html">About</a>
+
+        <a class="navitems" href="index.html">
+            <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px">
+        </a>
+
+        <div class="dropdown" href="#">Gameplay
+            <div class="dropdown-content">
+                <a href="#">Walkthrough</a>
+                <a href="#">Saves</a>
+            </div>
+        </div>
+
+        <div class="dropdown" href="#">Game Map
+            <div class="dropdown-content">
+                <a href="#">Alundra 2 Overworld</a>
+                <a href="roomlist.html">Room Listing</a>
+            </div>
+        </div>
+
+        <a class="navitems" href="downloads.html">Downloads</a>
+
+        <div class="dropdown" href="#">Hacking
+            <div class="dropdown-content">
+                <a href="rammap.html">RAM Map</a>
+                <a href="#">ROM Map</a>
+            </div>
+        </div>
+
+        <div class="dropdown" href="#">Speedrun
+            <div class="dropdown-content">
+                <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (this page is under construction)</a>
+            </div>
+        </div>
+
+        <a class="navitems" href="about.html">About</a>
     </nav>
+    
   </body>
 </html>
