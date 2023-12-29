@@ -31,7 +31,6 @@
         justify-content: left;
         align-items: center;
       }
-
       .navitems, .dropdown {
         display: flex;
         color: #f2f2f2;
@@ -39,44 +38,6 @@
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-      }
-      .content {
-        margin: 20px;
-        border: 15px solid transparent;
-        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border.png) 32 round;
-        background-color: #000000c8;
-        padding: 5px;
-        background-clip: padding-box;
-      }
-
-      .content2 {
-        margin: 20px;
-        border: 15px solid transparent;
-        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border.png) 32 round;
-        background-color: #000000c8;
-        padding: 5px;
-        background-clip: padding-box;
-      }
-
-      table {
-        width: calc(100% - 40px);
-        border-collapse: collapse;
-        margin-left: 20px;
-        margin-right: 20px;
-      }
-      th,td {
-        font-family: sans-serif;
-        border: 1px solid #abb1b8;
-        text-align: left;
-        padding: 8px;
-        background-color: #f8f9fa;
-      }
-      th {
-        background-color: #eaecf0;
-      }
-     .main {
-        padding: 16px;
-        margin-top: 80px;
       }
       .dropdown-content {
         display: none;
@@ -88,7 +49,6 @@
         background-color: #000000c8;
         background-clip: padding-box;
       }
-
       .dropdown-content a {
         color: white;
         display: flex;
@@ -96,24 +56,110 @@
         text-decoration: none;
         padding: 10px;
       }
-
       .dropdown-content a:hover {
         color: yellow;
       }
-
       .dropdown:hover .dropdown-content {
         display: block;
       }
-
       .dropdown:hover, .navitems:hover {
         text-shadow: #ffffff 0 0 25px;
         cursor: pointer;
+      }
+      .main {
+        margin-top: 100px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+      }
+      .leftside {
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
+        height: 100%;
+        width: 20%
+      }
+      .leftside p{
+        display: flex;
+        justify-content: left;
+        font-weight: bold;
+        font-size: 16pt;
+        margin-left: 15%;
+        margin-right: 25%;
+      }
+      .leftside a{
+        color: #4ba0f5;
+        display: flex;
+        justify-content: left;
+        margin-left: 15%;
+        margin-right: 25%;
+        margin-bottom: 5%;
+        font-weight: normal;
+      }
+      .rightside {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 80%;
+        margin-left: 10px;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30pt;
+        font-weight: bold;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
+      }
+      .contentTitle{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        font-size: 22pt;
+        font-weight: bold;
+        border: 15px solid transparent;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border.png) 32 round;
+        background-color: #000000c8;
+        background-clip: padding-box;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      th,td {
+        color: #f2f2f2;
+        font-family: sans-serif;
+        border: 1px solid #2b2b2b;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding: 8px;
+        background-color: #000000c8;
+      }
+      .address{
+        font-family: monospace;
+        color: #ffffbd;
+        font-size: larger;
+      }
+      th{
+        background-image: linear-gradient(to bottom, rgba(95,21,21,0.49631190366771705) 2%, rgba(0,0,0,0.15177408854166663) 52%);
       }
     </style>
   </head>
   <body>
     <nav>
-
         <a class="navitems" href="index.html">
             <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px">
         </a>
@@ -146,155 +192,251 @@
                 <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (this page is under construction)</a>
             </div>
         </div>
-
         <a class="navitems" href="about.html">About</a>
-
     </nav>
+
+
     <div class="main">
-      <div class="content">
-        <p>This RAM MAP is useful if you want to hack, change, test in-game functions or even create Lua Scripts.</p>
-        <p>Version used is NTSC-U [SLUS-01017], therefore those address may be different from another regions, such as NTSC-J or PAL.</p>
+      <div class="leftside">
+        <p>Page Navigator</p>
+        <a href="#GeneralAddr">General Addresses</a>
+        <a href="#PlayerAddr">Player Addresses</a>
+        <a href="#MapAddr">Map Addresses</a>
+        <a>Misc. Addresses</a>
       </div>
-      <div class="content">
-        <p>*We registered and indexed a total of 13 addresses.</p>
-      </div>
-      <div class="content2">
-        <p>Player Related Adresses:</p>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Address</th>
-            <th>Title</th>
-            <th>Notes</th>
-            <th>Default Value</th>
-            <th>Normal Value Range</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0x067712</td>
-            <td>Flint's Life</td>
-            <td>(Values above the limiter cause the game to crash. see Flint's Life limiter).</td>
-            <td>200</td>
-            <td>0 - 900</td>
-          </tr>
-          <tr>
-            <td>0x067710</td>
-            <td>Flint's Life limiter</td>
-            <td>Change this value to increase or decrease the limiter</td>
-            <td>200</td>
-            <td>0 - 900</td>
-          </tr>
-          <tr>
-            <td>0x11D631 or 0x11D641</td>
-            <td>Flint's Speed</td>
-            <td> 0 - idle, 8 - walk, 9 - walking jumping, 14 - running, 17 - running jumping</td>
-            <td>0</td>
-            <td> 0 - 255 (Values above 40 make it impossible to play)</td>
-          </tr>
-          <tr>
-            <td>0x067704</td>
-            <td>Flint's Gold</td>
-            <td> Change Flint's gold, 0x12F59C is in control of animation.</td>
-            <td>100</td>
-            <td>0 - 999999 (Values above 999999 may also work, but doesn't display correctly.)</td>
-          </tr>
-          <tr>
-            <td>0x06744F</td>
-            <td>Flint's Key Amount</td>
-            <td>Yep, just that.</td>
-            <td>0</td>
-            <td>0 - 9</td>
-          </tr>
-          <tr>
-            <td>0x067425</td>
-            <td>Enable EP</td>
-            <td>Enables Flint's EP bar</td>
-            <td>0</td>
-            <td>0 or 1 (enable or disabled)</td>
-          </tr>
-          <tr>
-            <td>0x067716</td>
-            <td>Flint's EP</td>
-            <td>Values above the EP limiter cause the game to crash. see Flint's EP limiter.</td>
-            <td>200</td>
-            <td>0 - 999</td>
-          </tr>
-          <tr>
-            <td>0x067714</td>
-            <td>Flint's EP limiter</td>
-            <td>Change this value to increase or decrease the limiter.</td>
-            <td>200</td>
-            <td> 0 - 999</td>
-          </tr>
-          <tr>
-            <td>0x06746C</td>
-            <td>Flint's Weapon</td>
-            <td>31 - Long Sword, 32 - Bronze Sword, 33 - Broad Sword, 34 - Rune Sword, 35 - Shining Sword, 36 - Rising Sword</td>
-            <td>31</td>
-            <td> [31, 32, 33, 34, 35, 36] (Anything else is another item and may crash the game).</td>
-          </tr>
-          <tr>
-            <td>0x06746E</td>
-            <td>Flint's Shield</td>
-            <td> 39 - Buckler Shield, 40 - Small Shield, 41 - Titan Shield, 42 - Mithril Shield, 43 - Adamant Shield, 44 - Valar Shield</td>
-            <td>39</td>
-            <td>[39, 40, 41, 42, 43, 44] (Anything else is another item and may crash the game).</td>
-          </tr>
-          <tr>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="content2">
-        <p>Game's general Adresses:</p>
-      </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Address</th>
-            <th>Title</th>
-            <th>Notes</th>
-            <th>Default Value</th>
-            <th>Normal Value Range</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>0x12B74C</td>
-            <td>Current Room</td>
-            <td>Changing this value, you're able to access every room on the game. After the value is set, you must change the teleport activator to 1.</td>
-            <td>Current room Value</td>
-            <td>The exact number of rooms in the game is unknown</td>
-          </tr>
-          <tr>
-            <td>0x12B752</td>
-            <td>Room teleport Activator</td>
-            <td>Activates teleportation to the designated room in Current Room.</td>
-            <td>0</td>
-            <td>0 or 1 (enabled or disabled)</td>
-          </tr>
-          <tr>
-            <td>0x0FA0F4</td>
-            <td>Hitbox Viewer</td>
-            <td>Change this value to see or unsee enemys, objects and characters hitbox.</td>
-            <td>0</td>
-            <td>0 or 1 (enabled or disabled)</td>
-          </tr>
-          <tr>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-            <td>100000</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="rightside">
+        <div class ="content">RAM Memory Map</div>
+        <div class ="contentTitle" id="GeneralAddr">General Addresses</div>
+        <table>
+          <thead>
+            <tr>
+              <th>US Address</th>
+              <th>JP Address</th>
+              <th>Icon</th>
+              <th>Lenght</th>
+              <th>Description</th>
+              <th>Notes</th>
+              <th>Default Value</th>
+              <th>Normal Value Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="address">12B74C</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>2 bytes</td>
+              <td>Change Current Room.</td>
+              <td>Set a specific room number to this address. After the value is set, you must change the teleport activator to 1.</td>
+              <td>Current room Value.</td>
+              <td>The exact number of rooms in the game is unknown.</td>
+            </tr>
+            <tr>
+              <td class="address">12B752</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Room teleport Activator.</td>
+              <td>Activates teleportation to the designated room in Current Room.</td>
+              <td>0</td>
+              <td>0 - 1 (ON/OFF)</td>
+            </tr>
+            <tr>
+            <tr>
+              <td class="address">060829</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Debug Jump.</td>
+              <td>Enable Debug Jump, it allows flint to make multiple jumps in the air.</td>
+              <td>0</td>
+              <td>0 - 1 (ON/OFF)</td>
+            </tr>
+              <td class="address">0FA0F4</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Hitbox Viewer.</td>
+              <td>Change this value to see or unsee enemys, objects and characters hitbox.</td>
+              <td>0</td>
+              <td>0 - 1 (ON/OFF)</td>
+            </tr>
+            <tr>
+              <td class="address">0FA0C7</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Initial Gameplay state.</td>
+              <td>(Useful if you want to test the game and doesn't want to wait). 1: Start from tutorial, 2: Select from memory card, 3: Main menu, 4: Skip tutorial, start from airship Storage room.</td>
+              <td>0</td>
+              <td>0 - 4</td>
+            </tr>
+            <tr>
+              <td class="address">0FA0C4</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Open game menus.</td>
+              <td>1: Item Shop, 2: Nothing, 3: Memory Card Save Screen, 4: Memory Card Load Screen, 5: Opens Flint's pocket.</td>
+              <td>0</td>
+              <td>0 - 5</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class ="contentTitle" id="PlayerAddr">Player Addresses</div>
+        <table>
+          <thead>
+            <tr>
+              <th>US Address</th>
+              <th>JP Address</th>
+              <th>Icon</th>
+              <th>Lenght</th>
+              <th>Description</th>
+              <th>Notes</th>
+              <th>Default Value</th>
+              <th>Normal Value Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="address">067712</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>2 bytes</td>
+              <td>Flint's Life.</td>
+              <td>(Values above the limiter cause the game to crash. see Flint's Life limiter).</td>
+              <td>200</td>
+              <td>0 - 999</td>
+            </tr>
+            <tr>
+              <td class="address">067710</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>2 bytes</td>
+              <td>Flint's Life limiter.</td>
+              <td>Change this value to increase or decrease the limiter.</td>
+              <td>200</td>
+              <td>0 - 999</td>
+            </tr>
+            <tr>
+              <td class="address">11D631 or 11D641</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Flint's Speed.</td>
+              <td> 0: Stopped, 8: Walking, 9: Walk+Jump, 14:Running, 17: Run+Jump.</td>
+              <td>0</td>
+              <td>0 - 17</td>
+            </tr>
+            <tr>
+              <td class="address">067704</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>4 bytes</td>
+              <td>Flint's Gold.</td>
+              <td> Change Flint's gold, 0x12F59C is in control of animation.</td>
+              <td>100</td>
+              <td>0 - 999999</td>
+            </tr>
+            <tr>
+              <td class="address">06744F</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Flint's Key Amount.</td>
+              <td>Change Flint's Key amount.</td>
+              <td>0</td>
+              <td>0 - 9</td>
+            </tr>
+            <tr>
+              <td class="address">067425</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Enable EP.</td>
+              <td>Enables Flint's EP bar.</td>
+              <td>0</td>
+              <td>0 - 1 (ON/OFF)</td>
+            </tr>
+            <tr>
+              <td class="address">067716</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>2 bytes</td>
+              <td>Flint's EP.</td>
+              <td>Values above the EP limiter cause the game to crash. see Flint's EP limiter.</td>
+              <td>200</td>
+              <td>0 - 999</td>
+            </tr>
+            <tr>
+              <td class="address">067714</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>2 bytes</td>
+              <td>Flint's EP limiter.</td>
+              <td>Change this value to increase or decrease the limiter.</td>
+              <td>200</td>
+              <td> 0 - 999</td>
+            </tr>
+            <tr>
+              <td class="address">06746C</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Flint's Weapon</td>
+              <td>31 - Long Sword, 32 - Bronze Sword, 33 - Broad Sword, 34 - Rune Sword, 35 - Shining Sword, 36 - Rising Sword.</td>
+              <td>31</td>
+              <td> [31, 32, 33, 34, 35, 36] (Anything else is another item and may crash the game).</td>
+            </tr>
+            <tr>
+              <td class="address">06746E</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Flint's Shield</td>
+              <td> 39 - Buckler Shield, 40 - Small Shield, 41 - Titan Shield, 42 - Mithril Shield, 43 - Adamant Shield, 44 - Valar Shield.</td>
+              <td>39</td>
+              <td>[39, 40, 41, 42, 43, 44] (Anything else is another item and may crash the game).</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class ="contentTitle" id="MapAddr">Map Addresses</div>
+        <table>
+          <thead>
+            <tr>
+              <th>US Address</th>
+              <th>JP Address</th>
+              <th>Icon</th>
+              <th>Lenght</th>
+              <th>Description</th>
+              <th>Notes</th>
+              <th>Default Value</th>
+              <th>Normal Value Range</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="address">---</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Particles state flag.</td>
+              <td>Controls the state of particles loaded on the map.</td>
+              <td>0</td>
+              <td>0 - 1 (ON/OFF)</td>
+            </tr>
+            <tr>
+              <td class="address">0FA0C6</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Room Visibility.</td>
+              <td>See or unsee elements of the current room. 0: See Everything, 1: See Only Objects, 2:See Only Room texture, 3: See nothing:</td>
+              <td>0</td>
+              <td>0 - 3</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
   </body>
 </html>
