@@ -13,6 +13,7 @@
         margin: 0;
         background-color: #212121;
         background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
+        animation: moveBackground 50s linear infinite; 
       }
       header {
         background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
@@ -22,7 +23,7 @@
         padding: 10px;
       }
       nav {
-        background-image: linear-gradient(#190a05c0 10%, #190a05A0 70%, #87000050);
+        background-image: linear-gradient(#190a05 10%, #190a05d0 70%, #64000060);
         position: fixed;
         top: 0;
         width: 100%;
@@ -30,6 +31,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
+        box-shadow: 0px 2px 1px #2d000040;
       }
       .navitems, .dropdown {
         display: flex;
@@ -79,7 +81,7 @@
         border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
         background-color: #000000c8;
         background-clip: padding-box;
-        height: 100%;
+        height: 500px;
         width: 20%
       }
       .leftside p{
@@ -91,7 +93,7 @@
         margin-right: 25%;
       }
       .leftside a{
-        color: #4ba0f5;
+        color: #f5de4b;
         display: flex;
         justify-content: left;
         margin-left: 15%;
@@ -113,10 +115,13 @@
         text-align: center;
         color: #ffffff;
         font-size: 30pt;
-        font-weight: bold;
+        font-weight: lighter;
+        font-family: 'Arial';
+        text-shadow: #b96666 0 0 10px;
         border: 15px solid transparent;
-        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border2.png) 20 round;
-        background-color: #000000c8;
+        image-rendering: pixelated;
+        border-image: url(https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/assets/border3.png) 8 round;
+        background-image: linear-gradient(to bottom, rgba(56,8,8,1) 0%, rgba(96,48,48,1) 48%, rgba(56,8,8,1) 100%);
         background-clip: padding-box;
       }
       .contentTitle{
@@ -134,11 +139,11 @@
         background-clip: padding-box;
       }
       table {
-        width: 100%;
         border-collapse: collapse;
         margin-top: 10px;
       }
       th,td {
+        width: auto;
         color: #f2f2f2;
         font-family: sans-serif;
         border: 1px solid #2b2b2b;
@@ -156,45 +161,70 @@
       th{
         background-image: linear-gradient(to bottom, rgba(95,21,21,0.49631190366771705) 2%, rgba(0,0,0,0.15177408854166663) 52%);
       }
+      @keyframes moveBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
+    @media screen and (max-width: 500px) {
+        .leftside {
+          display: none;
+        }
+        .rightside{
+          width: 100%;
+        }
+        .main {
+          margin: 100px 20px 0 0;
+        }
+        .content{
+          font-size: 20pt;
+        }
+        .contentTitle{
+          font-size: 12pt;
+        }
+      }
     </style>
   </head>
   <body>
     <nav>
-        <a class="navitems" href="index.html">
-            <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px">
-        </a>
+      <a class="navitems" href="index.html">
+          <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" width="140px">
+      </a>
 
-        <div class="dropdown" href="#">Gameplay
-            <div class="dropdown-content">
-                <a href="#">Walkthrough</a>
-                <a href="#">Saves</a>
-            </div>
-        </div>
+      <div class="dropdown" href="#">Gameplay
+          <div class="dropdown-content">
+              <a href="404.html">Walkthrough</a>
+              <a href="404.html">Saves</a>
+          </div>
+      </div>
 
-        <div class="dropdown" href="#">Game Map
-            <div class="dropdown-content">
-                <a href="#">Alundra 2 Overworld</a>
-                <a href="roomlist.html">Room Listing</a>
-            </div>
-        </div>
+      <div class="dropdown" href="#">Game Map
+          <div class="dropdown-content">
+              <a href="404.html">Alundra 2 Overworld</a>
+              <a href="404.html">Room Listing</a>
+          </div>
+      </div>
 
-        <a class="navitems" href="downloads.html">Downloads</a>
+      <a class="navitems" href="404.html">Downloads</a>
 
-        <div class="dropdown" href="#">Hacking
-            <div class="dropdown-content">
-                <a href="rammap.html">RAM Map</a>
-                <a href="#">ROM Map</a>
-            </div>
-        </div>
+      <div class="dropdown" href="#">Hacking
+          <div class="dropdown-content">
+              <a href="rammap.html">RAM Map</a>
+              <a href="404.html">ROM Map</a>
+              <a href="404.html">Alundra 2 Debug</a>
+          </div>
+      </div>
 
-        <div class="dropdown" href="#">Speedrun
-            <div class="dropdown-content">
-                <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (this page is under construction)</a>
-            </div>
-        </div>
-        <a class="navitems" href="about.html">About</a>
+      <div class="dropdown" href="404.html">Speedrun
+          <div class="dropdown-content">
+              <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (this page is under construction)</a>
+          </div>
+      </div>
+      <a class="navitems" href="about.html">About</a>
     </nav>
-
 
     <div class="main">
       <div class="leftside">
@@ -203,9 +233,13 @@
         <a href="#PlayerAddr">Player Addresses</a>
         <a href="#MapAddr">Map Addresses</a>
         <a>Misc. Addresses</a>
+        <br>
+        <p>See also</p>
+        <a href="404.html">ROM Map</a>
+        <a href="404.html">Room Listing</a>
       </div>
       <div class="rightside">
-        <div class ="content">RAM Memory Map</div>
+        <div class ="content">RAM MEMORY MAP</div>
         <div class ="contentTitle" id="GeneralAddr">General Addresses</div>
         <table>
           <thead>
@@ -221,6 +255,16 @@
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td class="address">0608D4</td>
+              <td class="address">05D0A4</td>
+              <td><img src="" width="100%"></td>
+              <td>1 bytes</td>
+              <td>Debug mode.</td>
+              <td>Change this value to enable or disable debug mode.</td>
+              <td>1</td>
+              <td>1 - 0 (OFF/ON, yes it's backwards.)</td>
+            </tr>
             <tr>
               <td class="address">12B74C</td>
               <td>-</td>
@@ -239,7 +283,7 @@
               <td>Room teleport Activator.</td>
               <td>Activates teleportation to the designated room in Current Room.</td>
               <td>0</td>
-              <td>0 - 1 (ON/OFF)</td>
+              <td>1 - 0 (ON/OFF)</td>
             </tr>
             <tr>
             <tr>
@@ -250,7 +294,7 @@
               <td>Debug Jump.</td>
               <td>Enable Debug Jump, it allows flint to make multiple jumps in the air.</td>
               <td>0</td>
-              <td>0 - 1 (ON/OFF)</td>
+              <td>1 - 0 (ON/OFF)</td>
             </tr>
               <td class="address">0FA0F4</td>
               <td>-</td>
@@ -259,7 +303,7 @@
               <td>Hitbox Viewer.</td>
               <td>Change this value to see or unsee enemys, objects and characters hitbox.</td>
               <td>0</td>
-              <td>0 - 1 (ON/OFF)</td>
+              <td>1 - 0 (ON/OFF)</td>
             </tr>
             <tr>
               <td class="address">0FA0C7</td>
@@ -356,7 +400,7 @@
               <td>Enable EP.</td>
               <td>Enables Flint's EP bar.</td>
               <td>0</td>
-              <td>0 - 1 (ON/OFF)</td>
+              <td>1 - 0 (ON/OFF)</td>
             </tr>
             <tr>
               <td class="address">067716</td>
@@ -398,6 +442,36 @@
               <td>39</td>
               <td>[39, 40, 41, 42, 43, 44] (Anything else is another item and may crash the game).</td>
             </tr>
+            <tr>
+              <td class="address">067464</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Flint's Pocket 1</td>
+              <td>This Value Holds the pocket 1 item, change it to have any item on it.</td>
+              <td>255</td>
+              <td>(23 - 26), (51 - 58), (70 - 74), (76 - 77)</td>
+            </tr>
+            <tr>
+              <td class="address">067465</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Flint's Pocket 2</td>
+              <td>This Value Holds the pocket 2 item, change it to have any item on it.</td>
+              <td>255</td>
+              <td>(23 - 26), (51 - 58), (70 - 74), (76 - 77)</td>
+            </tr>
+            <tr>
+              <td class="address">067466</td>
+              <td>-</td>
+              <td><img src="" width="100%"></td>
+              <td>1 byte</td>
+              <td>Flint's Pocket 3</td>
+              <td>This Value Holds the pocket 3 item, change it to have any item on it.</td>
+              <td>255</td>
+              <td>(23 - 26), (51 - 58), (70 - 74), (76 - 77)</td>
+            </tr>
           </tbody>
         </table>
         <div class ="contentTitle" id="MapAddr">Map Addresses</div>
@@ -416,14 +490,14 @@
           </thead>
           <tbody>
             <tr>
-              <td class="address">---</td>
+              <td class="address">-</td>
               <td>-</td>
               <td><img src="" width="100%"></td>
               <td>1 byte</td>
               <td>Particles state flag.</td>
               <td>Controls the state of particles loaded on the map.</td>
               <td>0</td>
-              <td>0 - 1 (ON/OFF)</td>
+              <td>1 - 0 (ON/OFF)</td>
             </tr>
             <tr>
               <td class="address">0FA0C6</td>
@@ -431,7 +505,7 @@
               <td><img src="" width="100%"></td>
               <td>1 byte</td>
               <td>Room Visibility.</td>
-              <td>See or unsee elements of the current room. 0: See Everything, 1: See Only Objects, 2:See Only Room texture, 3: See nothing:</td>
+              <td>See or unsee elements of the current room. 0: View all textures and objects, 1: View only objects, 2: View only texture, 3: View nothing.</td>
               <td>0</td>
               <td>0 - 3</td>
             </tr>
