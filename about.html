@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your primary news and resource site for the game Alundra 2!">
-    <title>Alundra 2 | About </title>
+    <meta name="description" content="Your primary news and resources site for the game Alundra 2!">
+    <title>Alundra 2 | About</title>
     <style>
       p {
         color: white;
@@ -14,10 +14,11 @@
         margin: 0;
         font-family: 'Arial', sans-serif;
         background-image: url("https://raw.githubusercontent.com/Arthurvx/Alundra2Explained/main/assets/KABEKAB1.jpg");
+        animation: moveBackground 50s linear infinite; 
       }
 
       nav {
-        background-image: linear-gradient(#190a05c0 10%, #190a05A0 70%, #87000050);
+        background-image: linear-gradient(#190a05 10%, #190a05d0 70%, #64000060);
         position: fixed;
         top: 0;
         width: 100%;
@@ -25,6 +26,7 @@
         display: flex;
         justify-content: left;
         align-items: center;
+        box-shadow: 0px 2px 1px #2d000040;
       }
 
       .navitems, .dropdown {
@@ -93,48 +95,55 @@
         text-shadow: #ffffff 0 0 25px;
         cursor: pointer;
       }
+      @keyframes moveBackground {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: 100% 0;
+      }
+    }
     </style>
   </head>
   <body>
   
     <nav>
+      <a class="navitems" href="index.html">
+          <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" width="140px">
+      </a>
 
-        <a class="navitems" href="index.html">
-            <img src="https://raw.githubusercontent.com/Arthurvx/Alundra2Central/main/weblogo.png" alt="logo" width="140px">
-        </a>
+      <div class="dropdown" href="#">Gameplay
+          <div class="dropdown-content">
+              <a href="404.html">Walkthrough</a>
+              <a href="404.html">Saves</a>
+          </div>
+      </div>
 
-        <div class="dropdown" href="#">Gameplay
-            <div class="dropdown-content">
-                <a href="#">Walkthrough</a>
-                <a href="#">Saves</a>
-            </div>
-        </div>
+      <div class="dropdown" href="#">Game Map
+          <div class="dropdown-content">
+              <a href="404.html">Alundra 2 Overworld</a>
+              <a href="404.html">Room Listing</a>
+          </div>
+      </div>
 
-        <div class="dropdown" href="#">Game Map
-            <div class="dropdown-content">
-                <a href="#">Alundra 2 Overworld</a>
-                <a href="roomlist.html">Room Listing</a>
-            </div>
-        </div>
+      <a class="navitems" href="404.html">Downloads</a>
 
-        <a class="navitems" href="downloads.html">Downloads</a>
+      <div class="dropdown" href="#">Hacking
+          <div class="dropdown-content">
+              <a href="rammap.html">RAM Map</a>
+              <a href="404.html">ROM Map</a>
+              <a href="404.html">Alundra 2 Debug</a>
+          </div>
+      </div>
 
-        <div class="dropdown" href="#">Hacking
-            <div class="dropdown-content">
-                <a href="rammap.html">RAM Map</a>
-                <a href="#">ROM Map</a>
-            </div>
-        </div>
-
-        <div class="dropdown" href="#">Speedrun
-            <div class="dropdown-content">
-                <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (this page is under construction)</a>
-            </div>
-        </div>
-
-        <a class="navitems" href="about.html">About</a>
-
+      <div class="dropdown" href="404.html">Speedrun
+          <div class="dropdown-content">
+              <a href="https://docs.google.com/document/d/1WzPib6Na40E6c7f0paOtQh9ZjiO-OdnN2lvnxBT_-oY/edit">Documents (this page is under construction)</a>
+          </div>
+      </div>
+      <a class="navitems" href="about.html">About</a>
     </nav>
+
     <div class="main">
       <div class="content">
         <p>Alundra 2: A New Legend Begins, is an action role-playing game developed by Matrix Software for PlayStation 1. The game was first released on November 18, 1999 in Japan. later in 2000, the game was release in USA and Canada (March) and EU (June).</p>
@@ -165,7 +174,7 @@
           <img src="https://wowroms.com/assets/images/russia.jpg"> - Алундра 2: Рождение легенды (100% Russian translation by Golden Leon <a href="http://pscd.ru/games_rus/psx_rus/a_psx_rus/9212-alundra-2-a-new-legend-begins-golden-leon.html">translation source</a>)
         </p>
         <p>
-          <img src="https://wowroms.com/assets/images/brazil.jpg"> - Alundra 2: Uma Nova Lenda Começa (???% Portuguese translation by Bit.Raiden <a href="https://www.romhacking.net.br/index.php?topic=1894.0">translation source</a>)
+          <img src="https://wowroms.com/assets/images/brazil.jpg"> - Alundra 2: Uma Nova Lenda Começa (± 90% Portuguese translation by Bit.Raiden <a href="https://bitmundo.net/projects/psx/alundra2/alundra2.html">translation source</a>)
         </p>
         <p>
           <img src="https://wowroms.com/assets/images/china.jpg"> - 阿兰多拉2魔化之迷 (???% Chinese translation by 黄金风格neo <a href="https://www.bilibili.com/video/BV1j3411J7nA/">translation source</a>)
